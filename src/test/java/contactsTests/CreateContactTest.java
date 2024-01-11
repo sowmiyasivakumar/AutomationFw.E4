@@ -39,6 +39,7 @@ public class CreateContactTest extends BaseClass
 			ContactInfoPage cip = new ContactInfoPage(driver);
 			String contactheader = cip.captureHeaderText();
 			
+			//Assertion
 			Assert.assertTrue(contactheader.contains(LASTNAME));
 			System.out.println(contactheader);
 			
